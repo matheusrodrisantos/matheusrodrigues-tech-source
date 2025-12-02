@@ -1,0 +1,25 @@
+baseURL = "https://matheusrodrigues.tech/"
+languageCode = "pt-br"
+title = "Matheus Rodrigues"
+theme = "hugo-blog-awesome"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Artigos sobre tecnologia, Linux e desenvolvimento"
+  mainSections = ["posts"]
+  dateFormat = "02/01/2006"
+  hideReadingTime = false
+  readingTimeText = "min de leitura"
+  defaultTheme = "auto"
+
+  # Links de contato
+  github = "https://github.com/matheusrodrisantos"
+  linkedin = "https://www.linkedin.com/in/matheus-rodrigues-888980119/"
+
+[params.author]
+  name = "Matheus Rodrigues"
+  bio = "Desenvolvedor e entusiasta de Linux, DevOps e open source."
+  avatar = "https://avatars.githubusercontent.com/u/SEU_ID_DO_GITHUB"
