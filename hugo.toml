@@ -4,6 +4,21 @@ title = "Matheus Rodrigues"
 theme = "hugo-blog-awesome"
 enableRobotsTXT = true
 
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = true
+
+
+[languages]
+
+  [languages.pt]
+    languageName = "Português"
+    weight = 1
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+
+    
 [pagination]
   pagerSize = 10
 
@@ -18,8 +33,33 @@ enableRobotsTXT = true
   # Links de contato
   github = "https://github.com/matheusrodrisantos"
   linkedin = "https://www.linkedin.com/in/matheus-rodrigues-888980119/"
+  showAvatarInNavbar = true
+  showAuthorAvatar = true
+
 
 [params.author]
   name = "Matheus Rodrigues"
   bio = "Desenvolvedor e entusiasta de Linux, DevOps e open source."
-  avatar = "https://avatars.githubusercontent.com/u/SEU_ID_DO_GITHUB"
+  avatar = "/images/avatar.jpeg"
+
+[menu]
+
+  [[menu.main]]
+    name = "Início"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Sobre"
+    url = "/sobre/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Projetos"
+    url = "/projetos/"
+    weight = 4
