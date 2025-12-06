@@ -1,0 +1,14 @@
+{{ $style := resources.Get "css/project-card.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+<div class="project-card">
+  <img class="project-cover" src="{{ .Get "image" }}" alt="{{ .Get "title" }} cover" />
+  <h3 class="project-title">
+    <a href="{{ .Get "repo" }}" target="_blank" rel="noopener">
+      {{ .Get "title" }}
+    </a>
+  </h3>
+
+  <p class="project-description">
+    {{ .Get "description" }}
+  </p>
+</div>

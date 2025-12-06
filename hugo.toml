@@ -1,27 +1,114 @@
-baseURL = "https://matheusrodrisantos.github.io/"
-languageCode = "pt-br"
+baseURL = "https://matheurodrigues.tech/"
 title = "Matheus Rodrigues"
 theme = "hugo-blog-awesome"
 enableRobotsTXT = true
 
-defaultContentLanguage = "pt"
 defaultContentLanguageInSubdir = true
 
 
 [languages]
 
+  ##############################
+  # 🇧🇷 PORTUGUÊS
+  ##############################
   [languages.pt]
     languageName = "Português"
     weight = 1
+    contentDir = "content/pt"
+    title = "Matheus Rodrigues"
+    languageCode = "pt-br"
 
+    [languages.pt.params]
+      sitename = "matheurodrigues"
+      defaultColor = "auto"
+      description = "Um tema Hugo veloz e minimalista com suporte a modo claro e escuro para rodar um blog ou site pessoal"
+      mainSections = ['posts']
+      
+
+    [languages.pt.params.author]
+      avatar = "avatar.jpeg" # put the file in assets folder; also ensure that image has same height and width
+      intro = "Matheus Rodrigues"
+      name = "Matheus Rodrigues"
+      description = "Bem-vindo(a) ao meu blog! Neste espaço, abordo temas como tecnologia, padrões de projeto, Open Source e tudo o que me inspirar no universo tecnológico."
+
+    [languages.pt.menus]
+      [[languages.pt.menus.main]]
+        name = "Início"
+        url = "/pt/"
+        weight = 1
+
+      [[languages.pt.menus.main]]
+        name = "Posts"
+        url = "/pt/posts/"
+        weight = 2
+
+      [[languages.pt.menus.main]]
+        name = "Projetos"
+        url = "/pt/projetos/"
+        weight = 3
+
+      [[languages.pt.menus.main]]
+        name = "Sobre"
+        url = "/pt/about/"
+        weight = 4
+
+
+  ##############################
+  # 🇺🇸 ENGLISH
+  ##############################
   [languages.en]
     languageName = "English"
     weight = 2
+    contentDir = "content/en"
+    title = "Matheus Rodrigues"
+    languageCode = "en-us"
 
-    
+    [languages.en.params]
+      sitename = "matheurodrigues"
+      defaultColor = "auto"
+      # Ajustei a descrição para o inglês
+      description = "A fast and minimalist Hugo theme with light and dark mode support for running a blog or personal site" 
+      mainSections = ['posts']
+
+    [languages.en.params.author]
+      avatar = "avatar.png" # put the file in assets folder; also ensure that image has same height and width
+      intro = "Matheus Rodrigues"
+      name = "Sidharth R"
+      # Ajustei a descrição para o inglês
+      description= "Welcome to my blog! Here, I talk about technology, design patterns, Open Source, and whatever else inspires me in the tech universe."
+
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = "Home"
+        url = "/en/"
+        weight = 1
+
+      [[languages.en.menus.main]]
+        name = "Posts"
+        url = "/en/posts/"
+        weight = 2
+
+      [[languages.en.menus.main]]
+        name = "Projects"
+        url = "/en/projects/"
+        weight = 3
+
+      [[languages.en.menus.main]]
+        name = "About"
+        url = "/en/about/"
+        weight = 4
+
+
+##############################
+# PAGINATION
+##############################
 [pagination]
   pagerSize = 10
 
+
+##############################
+# PARAMS GERAIS
+##############################
 [params]
   description = "Artigos sobre tecnologia, Linux e desenvolvimento"
   mainSections = ["posts"]
@@ -29,37 +116,36 @@ defaultContentLanguageInSubdir = true
   hideReadingTime = false
   readingTimeText = "min de leitura"
   defaultTheme = "auto"
+  enableEmoji=true
+  goToTop = true
+  showLanguageSelector = true
 
-  # Links de contato
+  # Contatos
   github = "https://github.com/matheusrodrisantos"
   linkedin = "https://www.linkedin.com/in/matheus-rodrigues-888980119/"
+
+  # Avatar no navbar
   showAvatarInNavbar = true
   showAuthorAvatar = true
 
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/matheusrodrisantos"
 
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com"
+  
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/matheus-rodrigues-888980119/"
+
+
+
+##############################
+# AUTOR
+##############################
 [params.author]
   name = "Matheus Rodrigues"
   bio = "Desenvolvedor e entusiasta de Linux, DevOps e open source."
   avatar = "/images/avatar.jpeg"
-
-[menu]
-
-  [[menu.main]]
-    name = "Início"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
-
-  [[menu.main]]
-    name = "Sobre"
-    url = "/sobre/"
-    weight = 3
-
-  [[menu.main]]
-    name = "Projetos"
-    url = "/projetos/"
-    weight = 4

@@ -1,0 +1,37 @@
+.projects-flex {
+  display: flex;
+  flex-wrap: nowrap;          /* quebra para a linha de baixo quando faltar espaço */
+  gap: 1.0rem;              /* espaçamento entre os cards */
+  justify-content: center;  /* centraliza a grade */
+  padding: 1rem 0;
+  
+}
+
+/* Ajustando o tamanho dos cards */
+.project-card {
+  flex: 1 1 260px;          /* largura mínima e flexível */
+  max-width: 300px;         /* evita cards enormes */
+  background: var(--card-bg);
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.08);
+}
+
+
+.project-cover {
+  width: 60%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 10px;
+}
+
+.project-title a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.project-description {
+  margin-top: .5rem;
+  color: var(--color-secondary);
+}
