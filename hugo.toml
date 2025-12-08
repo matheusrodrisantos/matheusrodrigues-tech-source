@@ -1,4 +1,4 @@
-baseURL = "https://matheurodrigues.tech/"
+baseURL = "https://matheusrodrisantos.github.io/"
 title = "Matheus Rodrigues"
 theme = "hugo-blog-awesome"
 enableRobotsTXT = true
@@ -23,7 +23,7 @@ defaultContentLanguageInSubdir = true
       defaultColor = "auto"
       description = "Um tema Hugo veloz e minimalista com suporte a modo claro e escuro para rodar um blog ou site pessoal"
       mainSections = ['posts']
-      
+      showLanguageSelector = true      
 
     [languages.pt.params.author]
       avatar = "avatar.jpeg" # put the file in assets folder; also ensure that image has same height and width
@@ -49,7 +49,7 @@ defaultContentLanguageInSubdir = true
 
       [[languages.pt.menus.main]]
         name = "Sobre"
-        url = "/pt/about/"
+        url = "/pt/sobre/"
         weight = 4
 
 
@@ -66,9 +66,9 @@ defaultContentLanguageInSubdir = true
     [languages.en.params]
       sitename = "matheurodrigues"
       defaultColor = "auto"
-      # Ajustei a descrição para o inglês
       description = "A fast and minimalist Hugo theme with light and dark mode support for running a blog or personal site" 
       mainSections = ['posts']
+      showLanguageSelector = true
 
     [languages.en.params.author]
       avatar = "avatar.png" # put the file in assets folder; also ensure that image has same height and width
@@ -118,7 +118,7 @@ defaultContentLanguageInSubdir = true
   defaultTheme = "auto"
   enableEmoji=true
   goToTop = true
-  showLanguageSelector = true
+  
 
   # Contatos
   github = "https://github.com/matheusrodrisantos"
