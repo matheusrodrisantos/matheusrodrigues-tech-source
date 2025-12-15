@@ -20,60 +20,11 @@
 
   <link rel="alternate" hreflang="pt" href="http://localhost:1313/pt/posts/" title="Português" />
 
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/" title="English" />
 
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/pt/posts/" />
-    <link rel="last" href="/pt/posts/" />
-    
-    
-    
-    
-
-    <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-01-01T00:00:00Z />
-    <meta property="article:published_time" content=2025-01-01T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/pt/posts/" />
-
-    
-    <meta property="og:article:author" content="Matheus Rodrigues" />
-    <meta property="article:author" content="Matheus Rodrigues" />
-    <meta name="author" content="Matheus Rodrigues" />
-    
-    
-
-    
-
-    <script defer type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Article",
-        "headline": "Posts",
-        "author": {
-        "@type": "Person",
-        "name": "https:\/\/github.com\/matheusrodrisantos"
-        },
-        "datePublished": "2025-01-01",
-        "description": "",
-        "wordCount":  0 ,
-        "mainEntityOfPage": "True",
-        "dateModified": "2025-01-01",
-        "image": {
-        "@type": "imageObject",
-        "url": ""
-        },
-        "publisher": {
-        "@type": "Organization",
-        "name": "Matheus Rodrigues"
-        }
-    }
-    </script>
 
 
 <meta name="generator" content="Hugo 0.142.0">
@@ -84,7 +35,7 @@
   <meta property="og:title" content="Posts">
   <meta property="og:description" content="Um tema Hugo veloz e minimalista com suporte a modo claro e escuro para rodar um blog ou site pessoal">
   <meta property="og:locale" content="pt_br">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
 
 
     
@@ -97,8 +48,6 @@
     
 
     <link rel="canonical" href="http://localhost:1313/pt/posts/">
-    <link href="/pt/posts/index.xml" rel="alternate" type="application/rss+xml" title="Matheus Rodrigues">
-    <link href="/pt/posts/index.xml" rel="feed" type="application/rss+xml" title="Matheus Rodrigues">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -127,9 +76,6 @@
 <body data-theme = "auto" class="notransition">
 
 <script src="/js/theme.js"></script>
-
-
-<link rel="stylesheet" href="/css/project-card.min.d2ca23da1fbca691cacd37aed61f23d942408d322e3d1afd69f815cdb6d9d530.css">
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
@@ -175,16 +121,45 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/pt/about/">
+                    <a class="menu-link " href="/pt/sobre/">
                         Sobre
                     </a>
                     
                 </li>
                 
+                
+                
+                
                 <li class="menu-separator">
                     <span>|</span>
                 </li>
                 
+                
+                <li>
+                    <select id="select-language" onchange="location = this.value;">
+                        
+                        <option value="/pt/" 
+                            selected>
+                            PT-BR
+                        </option>
+                        
+                        <option value="/en/" 
+                            >
+                            EN-US
+                        </option>
+                        
+                    </select>
+                    <span class="lang-flag">
+                        <img src="/images/pt.svg" width="22" alt="pt flag">
+                    </span>                
+                </li>
+                
+                
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
                 
             </ul>
             <a id="mode" href="#">
@@ -196,40 +171,21 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2025</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/pt/posts/meu-primeiro-post/">Meu primeiro post</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-01-01T00:00:00Z">
-        01/01/2025
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Posts</h1>
+                
+                
+            </header>
+            
+            <div class="page-content">
+                
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

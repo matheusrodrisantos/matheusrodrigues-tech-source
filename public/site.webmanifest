@@ -1,7 +1,7 @@
 {
     "name": "matheurodrigues",
     "short_name": "matheurodrigues",
-    "start_url": "http://localhost:34613/en/",
+    "start_url": "http://localhost:1313/en/",
     "theme_color": "#434648",
     "background_color": "#ffffff",
     "display": "standalone",

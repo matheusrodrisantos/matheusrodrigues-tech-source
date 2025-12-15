@@ -23,8 +23,7 @@
                     <ul>
                         {{ range .Children }}
                         <li>
-                            <a class="menu-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
-                                href="{{ .URL }}">
+                            <a class="menu-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
                                 {{ .Name }}
                             </a>
                         </li>
@@ -33,23 +32,34 @@
                     {{ end }}
                 </li>
                 {{ end }}
+                
+                <!-- Separador antes do seletor de idiomas -->
+                {{ if gt (len .Site.Languages) 1 }}
                 <li class="menu-separator">
                     <span>|</span>
                 </li>
+                
                 <!-- Language List -->
-                {{ if .IsTranslated }}
-                    <li>
-                        <select id="select-language" onchange="location = this.value;">
-                            <option value="/pt/" {{ if eq .Lang "pt" }}selected{{ end }}>PT-BR</option>
-                            <option value="/en/" {{ if eq .Lang "en" }}selected{{ end }}>EN-US</option>
-                        </select>
-                        <span class="lang-flag">
-                            <img src="/images/{{ .Lang }}.svg" width="22">
-                        </span>                
-                    </li>
-                    <li class="menu-separator">
-                        <span>|</span>
-                    </li>
+                <li>
+                    <select id="select-language" onchange="location = this.value;">
+                        {{ range .Site.Languages }}
+                        <option value="/{{ .Lang }}/" 
+                            {{ if eq $.Lang .Lang }}selected{{ end }}>
+                            {{ if eq .Lang "pt" }}PT-BR{{ else if eq .Lang "en" }}EN-US{{ else }}{{ .Lang }}{{ end }}
+                        </option>
+                        {{ end }}
+                    </select>
+                    <span class="lang-flag">
+                        <img src="/images/{{ .Lang }}.svg" width="22" alt="{{ .Lang }} flag">
+                    </span>                
+                </li>
+                {{ end }}
+                
+                <!-- Separador depois do seletor de idiomas (antes do botão de tema) -->
+                {{ if gt (len .Site.Languages) 1 }}
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
                 {{ end }}
             </ul>
             <a id="mode" href="#">
